@@ -45,11 +45,12 @@ color: rgb(65, 163, 218);
   }
   
   /* Rahmen für das 3x3-Raster innerhalb der Tabelle */
+  /* Rahmen für das 3x3-Raster innerhalb der Tabelle */
   .content table tr:nth-child(1) td {
     border-top: none;
   }
   
-  .content table tr:nth-child(4) td {
+  .content table tr:nth-child(3) td { /* Geändert von 8 zu 3 */
     border-bottom: none;
   }
   
@@ -57,7 +58,7 @@ color: rgb(65, 163, 218);
     border-left: none;
   }
   
-  .content table td:nth-child(4) {
+  .content table td:nth-child(3) { /* Geändert von 8 zu 3 */
     border-right: none;
   }
   
