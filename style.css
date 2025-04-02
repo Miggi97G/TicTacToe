@@ -7,14 +7,6 @@ body{
     background-color: rgb(50, 50, 50);
 }
 
-.x{
-    color: rgb(247, 194, 38);
-    font-weight: bold;
-}
-
-.o{
-color: rgb(65, 163, 218);
-}
 
 .content {
     display: flex;
@@ -96,3 +88,28 @@ color: rgb(65, 163, 218);
     margin-top: 20px;
   }
 
+/* ... (Dein bisheriger CSS-Code) ... */
+
+.x {
+    color: rgb(247, 194, 38);
+    font-weight: bold;
+    animation: appear 0.3s ease-in-out; /* Animation für das X */
+    animation-iteration-count: 1; /* Animation nur einmal abspielen */
+}
+
+.o {
+    color: rgb(65, 163, 218);
+    animation: appear 0.3s ease-in-out; /* Animation für das O */
+    animation-iteration-count: 1; /* Animation nur einmal abspielen */
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0); /* Anfangsgröße: 0 */
+        opacity: 0; /* Anfangs unsichtbar */
+    }
+    100% {
+        transform: scale(1); /* Endgröße: 1 (normale Größe) */
+        opacity: 1; /* Vollständig sichtbar */
+    }
+}
