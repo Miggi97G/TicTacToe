@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    background-color: rgb(50, 50, 50);
+}
+
+.x{
+    color: rgb(247, 194, 38);
+    font-weight: bold;
+}
+
+.o{
+color: rgb(65, 163, 218);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 3em; /* Größere Schrift */
+    color: #747474; /* Dunkelgraue Farbe */
+    text-align: center; /* Text zentrieren */
+    margin-bottom: 20px; /* Abstand zum Spielfeld */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+}
+  
+  .content table {
+    border-collapse: collapse; /* Wichtig, um die Rahmen der Zellen zu verbinden */
+  }
+  
+  .content table td {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  /* Rahmen für das 3x3-Raster innerhalb der Tabelle */
+  .content table tr:nth-child(1) td {
+    border-top: none;
+  }
+  
+  .content table tr:nth-child(4) td {
+    border-bottom: none;
+  }
+  
+  .content table td:nth-child(1) {
+    border-left: none;
+  }
+  
+  .content table td:nth-child(4) {
+    border-right: none;
+  }
+  
+  .content table td:hover {
+    background-color: #e0e0e0;
+  }
+
+  .reset_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .resetButton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resetButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-message {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+
